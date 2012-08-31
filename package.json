@@ -1,0 +1,28 @@
+{
+    "name": "fsdb",
+    "version": "0.0.1",
+    "description": "simple filesystem JSON-driven database",
+    "keywords": [
+        "json",
+        "db",
+        "database",
+        "fs",
+        "filesystem"
+    ],
+    "author": {
+        "name": "Artur Burtsev",
+        "email": "artjock@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/artjock/fsdb.git"
+    },
+    "main": "./index",
+    "engines": {
+        "node": ">= 0.6.x"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "expect.js": "*"
+    }
+}
