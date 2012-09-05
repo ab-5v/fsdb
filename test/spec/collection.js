@@ -35,9 +35,16 @@ describe('collection', function() {
             });
         });
 
-        it('should find all elements', function(done) {
+        it('should find few elements', function(done) {
             this.c8n.find({b: '2'}, function(err, data) {
                 expect(data).to.eql([{a: '1', b: '2'}, {a: '4', b: '2'}]);
+                done();
+            });
+        });
+
+        it('should find all elements with empty query', function(done) {
+            this.c8n.find({}, function(err, data) {
+                expect(data).to.eql([{a: '1', b: '2'}, {a: 1, b: '3'}, {a: '4', b: '2'}]);
                 done();
             });
         });
